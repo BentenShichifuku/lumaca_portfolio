@@ -1,10 +1,12 @@
-import Hero from "@/components/Hero";
+import Layout from '@/components/Layout';
+import Hero from '@/components/Hero';
+import ProfileCard from "@/components/ProfileCard";
 
 export default function Home() {
   return (
-    <main>
+    <Layout>
       <Hero />
-      {/* 今後：About, Works, Contact など追加していく */}
-    </main>
+      <ProfileCard />
+    </Layout>
   );
 }

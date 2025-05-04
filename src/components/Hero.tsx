@@ -1,59 +1,29 @@
-import React from "react";
-import Link from "next/link";
-
-const navLinks = [
-    { label: "Career", path: "career" },
-    { label: "Research", path: "research" },
-    { label: "Tech", path: "tech" },
-    { label: "Creative", path: "creative" },
-    { label: "Hobby", path: "hobby" },
-];
+// src/components/Hero.tsx
+import React, { useEffect, useState } from "react";
 
 const Hero = () => {
+    const [opacity, setOpacity] = useState(1);
+
+    useEffect(() => {
+        const handleScroll = () => {
+        const scrollY = window.scrollY;
+        const newOpacity = Math.max(1 - scrollY / 300, 0); // 300pxスクロールで消える
+        setOpacity(newOpacity);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     return (
-        <section className="relative w-full h-screen bg-sky-100 text-gray-900 flex items-center justify-center">
+        <section
+        className="w-full h-screen bg-sky-100 text-gray-900 flex items-center justify-center transition-opacity duration-500"
+        style={{ opacity }}
+        >
         <div className="text-center px-4">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Welcome to BraveBird
-            </h1>
-
-        {/* 🎯 Main navigation buttons */}
-        <div className="flex flex-wrap justify-center gap-4 mb-6">
-            {navLinks.map(({ label, path }, idx) => (
-                <Link key={idx} href={`/${path}`}>
-                <button className="bg-yellow-400 text-black px-4 py-2 rounded hover:bg-yellow-500 transition">
-                    {label}
-                </button>
-                </Link>
-            ))}
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Welcome to BraveBird</h1>
         </div>
-
-        {/* 🎯 SNS links */}
-        <div className="flex justify-center gap-6 text-2xl">
-            <a
-            href="https://github.com/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-            <i className="devicon-github-original" />
-            </a>
-            <a
-                href="https://twitter.com/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-            <i className="devicon-twitter-original" />
-            </a>
-            <a
-                href="https://instagram.com/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-            <i className="devicon-instagram-plain" />
-            </a>
-            </div>
-        </div>
-    </section>
+        </section>
     );
 };
 
