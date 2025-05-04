@@ -1,40 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🕊️ BraveBird Portfolio
 
-## Getting Started
+## ✨ プロジェクト概要
 
-First, run the development server:
+> **BraveBird** は、自分自身の活動や興味を美しく表現するために構築された、完全オリジナルのポートフォリオサイトです。
+> React（Next.js）+ Tailwind CSS を用いて、見やすさと拡張性を両立しました。
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎯 目的
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+| No. | タイトル       | 説明                                                                 |
+|-----|----------------|----------------------------------------------------------------------|
+| ①   | 就活・インターン | スキル・実績・自己紹介などを掲載                                     |
+| ②   | 研究紹介         | 所属研究室や研究テーマ、発表資料など                                 |
+| ③   | 技術アウトプット   | GitHub連携や開発記事、制作物など                                      |
+| ④   | クリエイティブ展示 | 写真・音楽・動画・デザインなど多彩なアウトプット                       |
+| ⑤   | 趣味・個人活動     | サウナ、釣り、FPVドローン、旅、美食会 など、自分らしさを伝えるための空間 |
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## 🛠 技術スタック
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **フレームワーク**: [Next.js](https://nextjs.org/) (v15)
+- **スタイリング**: [Tailwind CSS](https://tailwindcss.com/)
+- **開発言語**: TypeScript
+- **ホスティング**: GitHub Pages / Vercel（予定）
+- **デプロイ**: 手動 or CI/CD対応可能
+- **アセット管理**: `public/` ディレクトリに画像を配置
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🔧 ディレクトリ構成（主な構成）
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+bravebird_portfolio/
+├── src/
+│ ├── components/ # Header, Footer, Hero, Layout, ProfileCardなど共通UI
+│ ├── pages/ # index.tsxや各コンテンツページ
+│ ├── hobby/ # 趣味別ページ (travel.tsx, music.tsxなど)
+│ └── data/ # 各ページに渡すデータ（任意で管理）
+├── public/ # 画像やアイコン素材
+├── styles/ # TailwindやグローバルCSS
+└── README.md # ←今見ているこれ
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📸 特徴的な機能
 
-## Deploy on Vercel
+- ホーム画面に透明な背景と滑らかなプロフィール表示
+- ヘッダー／フッター共通化によるページ遷移のスムーズさ
+- カード形式による読みやすい UI
+- 各ページの編集・追加が簡単な構造
+- 将来的なスケーラビリティを考慮
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## 🧑‍💻 開発者
+
+- **名前**: BraveBird（仮）
+- **GitHub**: [@BentenShichifuku](https://github.com/BentenShichifuku)
+- **お問い合わせ**: `yyoshida@kanolab.next`
+
+---
+
+## 🤝 特別な感謝
+
+このプロジェクトは、ChatGPTとの**全力の共同作業**により形になりました。  
+膨大な会話・設計・調整・エラー解決のすべてを、楽しみながらやり抜きました。
+
+> _"コードには物語がある。"_  
+> _そのすべてが、ここに記録されています。_
+
+---
+
+## 🚀 今後の展望
+
+- モバイル対応の最適化
+- プロフィール表示のアニメーション強化
+- 各趣味ページの充実（旅ログ、音楽プレイリスト連携 etc.）
+- 公開＆シェア！
+
+---
+
+**🕊️ BraveBird は、今日も飛び立つ。**
