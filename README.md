@@ -80,3 +80,5 @@ bravebird_portfolio/
 ---
 
 **🕊️ BraveBird は、今日も飛び立つ。**
+
+run:npm run dev
