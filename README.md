@@ -24,7 +24,7 @@
 - **フレームワーク**: [Next.js](https://nextjs.org/) (v15)
 - **スタイリング**: [Tailwind CSS](https://tailwindcss.com/)
 - **開発言語**: TypeScript
-- **ホスティング**: GitHub Pages / Vercel（予定）
+- **ホスティング**: Vercel
 - **デプロイ**: 手動 or CI/CD対応可能
 - **アセット管理**: `public/` ディレクトリに画像を配置
 
@@ -54,19 +54,9 @@ bravebird_portfolio/
 
 ## 🧑‍💻 開発者
 
-- **名前**: BraveBird（仮）
+- **名前**: BentenShichifuku
 - **GitHub**: [@BentenShichifuku](https://github.com/BentenShichifuku)
 - **お問い合わせ**: `yyoshida@kanolab.next`
-
----
-
-## 🤝 特別な感謝
-
-このプロジェクトは、ChatGPTとの**全力の共同作業**により形になりました。  
-膨大な会話・設計・調整・エラー解決のすべてを、楽しみながらやり抜きました。
-
-> _"コードには物語がある。"_  
-> _そのすべてが、ここに記録されています。_
 
 ---
 
@@ -75,10 +65,9 @@ bravebird_portfolio/
 - モバイル対応の最適化
 - プロフィール表示のアニメーション強化
 - 各趣味ページの充実（旅ログ、音楽プレイリスト連携 etc.）
-- 公開＆シェア！
+- 公開＆シェア
 
 ---
 
 **🕊️ BraveBird は、今日も飛び立つ。**
-
 run:npm run dev
