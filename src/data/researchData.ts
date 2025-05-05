@@ -2,7 +2,7 @@
 
 export const researchInfo = {
     labName: "静岡大学 情報学部 狩野研究室",
-    theme: "人物特性の分析と再現再現",
+    theme: "人物特性の分析と再現",
     description: "現在、比喩表現が理解できるAIモデルを作っています。",
     };
 
