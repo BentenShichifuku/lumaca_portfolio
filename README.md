@@ -1,5 +1,3 @@
-# 🕊️ BraveBird Portfolio
-
 # bentenshichifuku_portfolio
  [公開中のポートフォリオを見る](https://bentenshichifuku-portfolio-site.vercel.app/)
 
