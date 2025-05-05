@@ -15,7 +15,7 @@ export default function GourmetPage() {
             className="inline-block transition transform hover:scale-105"
         >
             <Image
-                src="/images/lumaca-icon.png" // public/images に置いた画像名に合わせて！
+                src="/images/lumaca.png" // public/images に置いた画像名に合わせて！
                 alt="Lumaca Icon"
                 width={120}
                 height={120}

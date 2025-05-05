@@ -2,8 +2,8 @@
 
 export const researchInfo = {
     labName: "静岡大学 情報学部 狩野研究室",
-    theme: "多義語の語義曖昧性解消における文脈特徴の抽出手法",
-    description: "現在、文脈ベースで多義語の意味を判別する研究に取り組んでいます。TransformerやLLMを用いた特徴抽出に注目しています。",
+    theme: "人物特性の分析と再現再現",
+    description: "現在、比喩表現が理解できるAIモデルを作っています。",
     };
 
     export const presentations = [

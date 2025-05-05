@@ -14,11 +14,11 @@ export default function HobbyTopPage() {
         <Layout>
         <div className="text-center py-20 px-4">
             <h1 className="text-4xl font-bold mb-8">My Hobbies</h1>
-            <p className="mb-6 text-gray-600">気になる趣味をクリック！</p>
+            <p className="mb-6 text-gray-600">ガクチカのために趣味をまとめます。</p>
             <div className="flex flex-wrap justify-center gap-4">
             {hobbies.map((hobby, idx) => (
                 <Link key={idx} href={hobby.url}>
-                <button className="bg-sky-500 hover:bg-sky-600 text-white px-5 py-2 rounded shadow">
+                <button className="bg-sky-500 hover:bg-sky-600 text-white px-10 py-4 rounded shadow">
                     {hobby.title}
                 </button>
             </Link>

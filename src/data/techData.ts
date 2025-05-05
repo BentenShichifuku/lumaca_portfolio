@@ -1,11 +1,11 @@
 // src/data/techData.ts
 
 export const techStack = [
-    { name: "React", level: "熟練", icon: "devicon-react-original" },
-    { name: "TypeScript", level: "中級", icon: "devicon-typescript-plain" },
-    { name: "Python", level: "熟練", icon: "devicon-python-plain" },
-    { name: "Tailwind CSS", level: "中級", icon: "devicon-tailwindcss-plain" },
-    { name: "Next.js", level: "使用中", icon: "devicon-nextjs-original" },
+    { name: "React", level: "初心者", icon: "devicon-react-original" },
+    { name: "TypeScript", level: "初心者", icon: "devicon-typescript-plain" },
+    { name: "Python", level: "中級者", icon: "devicon-python-plain" },
+    { name: "Tailwind CSS", level: "初心者", icon: "devicon-tailwindcss-plain" },
+    { name: "Next.js", level: "初心者", icon: "devicon-nextjs-original" },
     ];
 
     export const github = {
