@@ -1,5 +1,8 @@
 # 🕊️ BraveBird Portfolio
 
+# bentenshichifuku_portfolio
+ [公開中のポートフォリオを見る](https://bentenshichifuku-portfolio-site.vercel.app/)
+
 ## ✨ プロジェクト概要
 
 > **BraveBird** は、自分自身の活動や興味を美しく表現するために構築された、完全オリジナルのポートフォリオサイトです。
