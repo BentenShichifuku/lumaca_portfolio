@@ -15,7 +15,7 @@ export default function ProfileCard() {
             />
             <h2 className="text-4xl font-bold">BraveBird</h2>
             <p className="text-sm">所属：静岡大学 情報学部 狩野研究室</p>
-            <p className="text-sm">Mail：yyoshida@kanolab.next</p>
+            <p className="text-sm">Mail：yyoshida@kanolab.net</p>
             <p className="text-sm">その他：XXX</p>
             </div>
         </div>
