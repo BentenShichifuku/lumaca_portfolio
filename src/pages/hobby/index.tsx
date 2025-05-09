@@ -5,7 +5,6 @@ import Layout from "@/components/Layout";
 const hobbies = [
     { title: "Gourmet", url: "/hobby/gourmet" },
     { title: "Travel", url: "/hobby/travel" },
-    { title: "Music", url: "/hobby/music" },
     { title: "+++", url: "#" },
 ];
 

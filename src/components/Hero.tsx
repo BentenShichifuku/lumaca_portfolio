@@ -21,7 +21,7 @@ const Hero = () => {
         style={{ opacity }}
         >
         <div className="text-center px-4">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Welcome to BraveBird</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Welcome to lumaca</h1>
         </div>
         </section>
     );
