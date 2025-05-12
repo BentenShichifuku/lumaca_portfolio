@@ -8,10 +8,13 @@ type Props = {
 
 export default function Layout({ children }: Props) {
     return (
-        <div className="min-h-screen flex flex-col bg-sky-50 text-gray-900 font-sans">
-        <Header />
-        <main className="flex-grow">{children}</main>
-        <Footer />
+        <div
+            className="min-h-screen flex flex-col text-gray-900 font-sans"
+            style={{ backgroundColor: '#FFFDE7' }} // 薄いクリーム色
+        >
+            <Header />
+            <main className="flex-grow">{children}</main>
+            <Footer />
         </div>
     );
 }
