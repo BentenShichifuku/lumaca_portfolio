@@ -36,8 +36,10 @@ export default function Header() {
                             Archives
                         </Link>
                         {showArchives && (
-                            <div className="absolute left-0 mt-2 bg-white border rounded shadow-md w-32 text-left z-50">
-                                <Link href="/archives/all" className="block px-4 py-2 hover:bg-sky-100">All</Link>
+                            <div className="absolute left-0 mt-2 bg-white border rounded shadow-md w-32 text-left z-50 pt-2">
+                                {/* invisible hover bridge */}
+                                <div className="absolute -top-3 left-0 w-full h-3" />
+                                <Link href="/archives/all" className="block px-4 py-2 hover:bg-sky-100">all</Link>
                                 <Link href="/archives/2024" className="block px-4 py-2 hover:bg-sky-100">2024</Link>
                                 <Link href="/archives/2025" className="block px-4 py-2 hover:bg-sky-100">2025</Link>
                             </div>
@@ -54,9 +56,11 @@ export default function Header() {
                             Others
                         </Link>
                         {showOthers && (
-                            <div className="absolute left-0 mt-2 bg-white border rounded shadow-md w-40 text-left z-50">
-                                <Link href="/others/information" className="block px-4 py-2 hover:bg-sky-100">Information</Link>
-                                <Link href="/others/editors" className="block px-4 py-2 hover:bg-sky-100">Editor</Link>
+                            <div className="absolute left-0 mt-2 bg-white border rounded shadow-md w-40 text-left z-50 pt-2">
+                                {/* invisible hover bridge */}
+                                <div className="absolute -top-3 left-0 w-full h-3" />
+                                <Link href="/others/information" className="block px-4 py-2 hover:bg-sky-100">information</Link>
+                                <Link href="/others/editors" className="block px-4 py-2 hover:bg-sky-100">editor</Link>
                             </div>
                         )}
                     </div>
