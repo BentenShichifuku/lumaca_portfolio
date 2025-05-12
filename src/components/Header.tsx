@@ -56,7 +56,7 @@ export default function Header() {
                         {showOthers && (
                             <div className="absolute left-0 mt-2 bg-white border rounded shadow-md w-40 text-left z-50">
                                 <Link href="/others/information" className="block px-4 py-2 hover:bg-sky-100">Information</Link>
-                                <Link href="/others/editor" className="block px-4 py-2 hover:bg-sky-100">Editor</Link>
+                                <Link href="/others/editors" className="block px-4 py-2 hover:bg-sky-100">Editor</Link>
                             </div>
                         )}
                     </div>
