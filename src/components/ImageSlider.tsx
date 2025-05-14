@@ -11,15 +11,15 @@ type ImageData = {
 const images: ImageData[] = [
   {
     src: '/images/fortissimo_h.jpg',
-    caption: 'AtFortissimo_h',
+    caption: '2025/03/28 at fortissimo h',
   },
   {
-    src: '/images/photo2.jpg',
-    caption: '静かな夜の街',
+    src: '/images/kitazumi.jpg',
+    caption: '2024/11/08 at kitazumi',
   },
   {
-    src: '/images/photo3.jpg',
-    caption: '青い森の入口',
+    src: '/images/yokoi.jpg',
+    caption: '2025/05/11 at yokoi',
   },
 ];
 
