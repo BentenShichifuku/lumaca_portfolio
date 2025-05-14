@@ -11,15 +11,15 @@ type ImageData = {
 const images: ImageData[] = [
   {
     src: '/images/fortissimo_h.jpg',
-    caption: 'AtFortissimo_h',
+    caption: '2025/03/28 at fortissimo h',
   },
   {
-    src: '/images/photo2.jpg',
-    caption: '静かな夜の街',
+    src: '/images/kitazumi.jpg',
+    caption: '2024/11/08 at kitazumi',
   },
   {
-    src: '/images/photo3.jpg',
-    caption: '青い森の入口',
+    src: '/images/yokoi.jpg',
+    caption: '2025/05/11 at yokoi',
   },
 ];
 
@@ -51,8 +51,8 @@ export default function ImageSlider() {
   // 説明文を一文字ずつ表示
   useEffect(() => {
     if (isHeroVisible) return;
-    const caption = images[index]?.caption;
-    if (!caption) return;
+    const caption = images[index]?.caption?.trim() || '';  // captionがundefinedの場合は空文字を設定
+    if (!caption) return;  // captionが空の場合は処理を中断
     setDisplayedText('');
     charIndexRef.current = 0;
     if (intervalRef.current) clearInterval(intervalRef.current);
