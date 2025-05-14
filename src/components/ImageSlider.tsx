@@ -51,8 +51,8 @@ export default function ImageSlider() {
   // 説明文を一文字ずつ表示
   useEffect(() => {
     if (isHeroVisible) return;
-    const caption = images[index]?.caption;
-    if (!caption) return;
+    const caption = images[index]?.caption?.trim() || '';  // captionがundefinedの場合は空文字を設定
+    if (!caption) return;  // captionが空の場合は処理を中断
     setDisplayedText('');
     charIndexRef.current = 0;
     if (intervalRef.current) clearInterval(intervalRef.current);
