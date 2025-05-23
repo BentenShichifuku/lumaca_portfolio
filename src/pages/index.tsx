@@ -19,7 +19,8 @@ export default function Home() {
     name: "lumaca",
     description: "おいしいもの巡りの足跡",
     logo: "/logo.jpg",
-    category: "blog"
+    category: "blog",
+    url: "https://example.com",
   };
 
   return (
