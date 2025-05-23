@@ -10,15 +10,15 @@ type ImageData = {
 
 const images: ImageData[] = [
   {
-    src: '/images/fortissimo_h.jpg',
+    src: '/images/gourmet/fortissimo_h.jpg',
     caption: '2025/03/28 at fortissimo h',
   },
   {
-    src: '/images/kitazumi.jpg',
+    src: '/images/gourmet/kitazumi.jpg',
     caption: '2024/11/08 at kitazumi',
   },
   {
-    src: '/images/yokoi.jpg',
+    src: '/images/gourmet/yokoi.jpg',
     caption: '2025/05/11 at yokoi',
   },
 ];

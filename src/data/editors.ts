@@ -1,5 +1,3 @@
-// data/editors.ts
-
 export interface Profile {
     name: string;
     image: string;
