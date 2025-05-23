@@ -18,7 +18,7 @@ export default function Home() {
   const siteInfo: SiteInfo = {
     name: "lumaca",
     description: "おいしいもの巡りの足跡",
-    logo: "/images/logo.jpg",
+    logo: "/logo.jpg",
     category: "blog"
   };
 
