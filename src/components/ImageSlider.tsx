@@ -51,14 +51,14 @@ export default function ImageSlider() {
   // 説明文を一文字ずつ表示
   useEffect(() => {
     if (isHeroVisible) return;
-    const caption = images[index].caption;  // captionは必ず存在するので、オプショナルチェーンを削除
+    const caption = images[index].caption;
     setDisplayedText('');
     charIndexRef.current = 0;
     if (intervalRef.current) clearInterval(intervalRef.current);
 
     intervalRef.current = setInterval(() => {
       if (charIndexRef.current < caption.length) {
-        setDisplayedText(caption.substring(0, charIndexRef.current + 1));  // substringを使用して文字列を構築
+        setDisplayedText(caption.substring(0, charIndexRef.current + 1));
         charIndexRef.current += 1;
       } else {
         if (intervalRef.current) clearInterval(intervalRef.current);
@@ -76,7 +76,7 @@ export default function ImageSlider() {
         {/* 左矢印 */}
         <button
           onClick={prevImage}
-          className="absolute -left-20 bg-[#fff1b8] border border-gray-300 rounded-full w-14 h-14 flex items-center justify-center shadow-md hover:bg-yellow-200"
+          className="absolute -left-20 bg-[#fff1b8] border border-gray-300 rounded-full w-14 h-14 flex items-center justify-center shadow-md hover:bg-yellow-200 z-10"
         >
           <span className="text-2xl font-bold">{'◀'}</span>
         </button>
@@ -96,6 +96,7 @@ export default function ImageSlider() {
           <div className="relative w-[880px] h-[880px] p-6 bg-[#fff9db] rounded-xl shadow-md">
             <div className="w-full h-full relative">
               <Image
+                key={index}
                 src={images[index].src}
                 alt={images[index].caption}
                 fill
@@ -105,6 +106,7 @@ export default function ImageSlider() {
                 }}
                 className="rounded-md transition-transform duration-300 hover:scale-[1.02]"
                 sizes="(max-width: 880px) 100vw, 880px"
+                priority
               />
             </div>
           </div>
@@ -113,7 +115,7 @@ export default function ImageSlider() {
         {/* 右矢印 */}
         <button
           onClick={nextImage}
-          className="absolute -right-20 bg-[#fff1b8] border border-gray-300 rounded-full w-14 h-14 flex items-center justify-center shadow-md hover:bg-yellow-200"
+          className="absolute -right-20 bg-[#fff1b8] border border-gray-300 rounded-full w-14 h-14 flex items-center justify-center shadow-md hover:bg-yellow-200 z-10"
         >
           <span className="text-2xl font-bold">{'▶'}</span>
         </button>
