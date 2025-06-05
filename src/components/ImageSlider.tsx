@@ -51,15 +51,14 @@ export default function ImageSlider() {
   // 説明文を一文字ずつ表示
   useEffect(() => {
     if (isHeroVisible) return;
-    const caption = images[index]?.caption?.trim() || '';  // captionがundefinedの場合は空文字を設定
-    if (!caption) return;  // captionが空の場合は処理を中断
+    const caption = images[index].caption;  // captionは必ず存在するので、オプショナルチェーンを削除
     setDisplayedText('');
     charIndexRef.current = 0;
     if (intervalRef.current) clearInterval(intervalRef.current);
 
     intervalRef.current = setInterval(() => {
       if (charIndexRef.current < caption.length) {
-        setDisplayedText((prev) => prev + caption[charIndexRef.current]);
+        setDisplayedText(caption.substring(0, charIndexRef.current + 1));  // substringを使用して文字列を構築
         charIndexRef.current += 1;
       } else {
         if (intervalRef.current) clearInterval(intervalRef.current);
