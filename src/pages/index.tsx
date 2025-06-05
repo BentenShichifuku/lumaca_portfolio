@@ -2,7 +2,9 @@ import { useEffect, useState } from 'react';
 import Layout from '@/components/Layout';
 import Hero from '@/components/Hero';
 import ImageSlider from '@/components/ImageSlider';
-import SiteCard, { SiteInfo } from '@/components/SiteCard';
+import { SiteInfo } from '@/components/SiteCard';
+import CardCarousel from '@/components/CardCarousel';
+import { Profile } from '@/data/editors';
 
 export default function Home() {
   const [showHero, setShowHero] = useState(true);
@@ -23,6 +25,24 @@ export default function Home() {
     url: "https://example.com",
   };
 
+  // エディター情報
+  const editors: Profile[] = [
+    {
+      name: "Editor 1",
+      image: "/images/editor1.jpg",
+      affiliation: "所属1",
+      email: "editor1@example.com",
+      portfolio: "https://portfolio1.example.com"
+    },
+    {
+      name: "Editor 2",
+      image: "/images/editor2.jpg",
+      affiliation: "所属2",
+      email: "editor2@example.com",
+      portfolio: "https://portfolio2.example.com"
+    }
+  ];
+
   return (
     <>
       {showHero && (
@@ -31,11 +51,13 @@ export default function Home() {
         </div>
       )}
       <Layout>
-        <div className={`${showHero ? 'invisible' : 'visible'} transition-opacity duration-500`}>
-          <ImageSlider />
-          {/* サイト紹介カード */}
-          <div className="mt-8 flex justify-center">
-            <SiteCard site={siteInfo} />
+        <div className={`${showHero ? 'invisible' : 'visible'} transition-opacity duration-700 min-h-screen`}>
+          <div className="pt-8">
+            <ImageSlider />
+          </div>
+          {/* カルーセル */}
+          <div className="my-40 px-20">
+            <CardCarousel siteInfo={siteInfo} editors={editors} />
           </div>
           {/* 他のセクションが続く場合はここに追加 */}
         </div>

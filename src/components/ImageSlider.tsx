@@ -99,8 +99,11 @@ export default function ImageSlider() {
                 src={images[index].src}
                 alt={images[index].caption}
                 fill
-                style={{ objectFit: 'contain' }}
-                className="rounded-md"
+                style={{ 
+                  objectFit: 'contain',
+                  filter: 'drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))',
+                }}
+                className="rounded-md transition-transform duration-300 hover:scale-[1.02]"
                 sizes="(max-width: 880px) 100vw, 880px"
               />
             </div>
